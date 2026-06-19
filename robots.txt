@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://geskinja2002.github.io/web-mahjonghu-com/sitemap.xml

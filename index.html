@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>站点介绍：麻将胡了 · 平台可信说明</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: #f2f7f9;
+            color: #1b2e3b;
+            line-height: 1.7;
+            padding: 2rem 1rem;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .page-wrapper {
+            max-width: 780px;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        /* 网格卡片感 —— 朴素网格背景 */
+        .content-grid {
+            background-image:
+                linear-gradient(rgba(0, 150, 136, 0.04) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 150, 136, 0.04) 1px, transparent 1px);
+            background-size: 28px 28px;
+            background-position: -1px -1px;
+            padding: 2rem 1.8rem;
+            border-radius: 32px;
+            background-color: #ffffff;
+            box-shadow: 0 8px 28px rgba(42, 93, 90, 0.08);
+            border: 1px solid rgba(0, 150, 136, 0.15);
+        }
+
+        /* 蓝绿色点缀 */
+        .accent {
+            color: #00897b;
+        }
+
+        .accent-bg-light {
+            background: #d9f0ed;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #cde2df;
+            margin: 2rem 0 1.6rem;
+        }
+
+        h1 {
+            font-size: 2.1rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            line-height: 1.2;
+            margin-bottom: 0.4rem;
+            color: #17423b;
+        }
+
+        .subhead {
+            font-size: 1.05rem;
+            color: #3a6a63;
+            margin-bottom: 1.6rem;
+            border-left: 4px solid #00897b;
+            padding-left: 1rem;
+            font-weight: 400;
+        }
+
+        .lead {
+            font-size: 1.08rem;
+            margin: 1.2rem 0 1.6rem;
+            padding: 0.8rem 1.2rem;
+            background: rgba(0, 137, 123, 0.05);
+            border-radius: 20px;
+            border-left: 4px solid #00897b;
+        }
+
+        p {
+            margin-bottom: 1.3rem;
+        }
+
+        .callout {
+            background: #e7f3f1;
+            padding: 1.2rem 1.6rem;
+            border-radius: 24px;
+            margin: 1.8rem 0;
+            font-size: 0.98rem;
+            border: 1px solid rgba(0, 137, 123, 0.2);
+            box-shadow: 0 2px 8px rgba(0,80,70,0.04);
+        }
+
+        .callout strong {
+            color: #00695c;
+        }
+
+        .faq-mini {
+            margin: 2rem 0 0.8rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .faq-item {
+            background: #f8fcfb;
+            padding: 1rem 1.2rem;
+            border-radius: 20px;
+            border: 1px solid #d7e8e4;
+        }
+
+        .faq-item .q {
+            font-weight: 600;
+            font-size: 0.95rem;
+            color: #1b4b44;
+            display: block;
+            margin-bottom: 0.25rem;
+        }
+
+        .faq-item .a {
+            font-size: 0.93rem;
+            color: #2e5d55;
+        }
+
+        .site-link-inline {
+            color: #00897b;
+            font-weight: 500;
+            text-decoration: none;
+            border-bottom: 1.5px solid #a0d0c8;
+            transition: border-color 0.2s, background 0.15s;
+        }
+
+        .site-link-inline:hover {
+            border-bottom-color: #00695c;
+            background: #e1f0ed;
+            border-radius: 4px;
+        }
+
+        .meta-note {
+            font-size: 0.9rem;
+            color: #597f77;
+            margin-top: 1.8rem;
+            border-top: 1px dashed #bcd5d0;
+            padding-top: 1.2rem;
+            text-align: right;
+        }
+
+        .visit-sentence {
+            margin: 2rem 0 1rem;
+            font-size: 1.05rem;
+            background: #f1f9f7;
+            padding: 0.9rem 1.6rem;
+            border-radius: 40px;
+            display: inline-block;
+            border: 1px solid #00897b30;
+        }
+
+        /* 移动端友好 */
+        @media (max-width: 600px) {
+            body {
+                padding: 1rem 0.6rem;
+            }
+            .content-grid {
+                padding: 1.5rem 1rem;
+                border-radius: 24px;
+            }
+            h1 {
+                font-size: 1.8rem;
+            }
+            .subhead {
+                font-size: 0.95rem;
+            }
+            .lead {
+                font-size: 1rem;
+                padding: 0.6rem 1rem;
+            }
+            .callout {
+                padding: 1rem 1.2rem;
+            }
+            .faq-item {
+                padding: 0.8rem 1rem;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .content-grid {
+                padding: 1.2rem 0.8rem;
+            }
+            h1 {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="page-wrapper">
+        <div class="content-grid">
+
+            <h1>关于 <span class="accent">麻将胡了</span> 的站点说明</h1>
+            <div class="subhead">一份基于实际使用场景的可信介绍</div>
+
+            <p class="lead">
+                对于希望获得稳定、可直接访问的线上娱乐体验的用户而言，<a href="https://web-mahjonghu.com" class="site-link-inline">麻将胡了</a> 提供了一套现代且聚焦的网页产品。以下从站点属性、内容可信度以及日常使用等维度展开说明，帮助新访客快速建立认知。
+            </p>
+
+            <p>
+                <strong>麻将胡了</strong> 并非单一的游戏页面，而是一个整合了规则指引、玩法解析与平台入口的信息型站点。其页面结构清晰，内容更新有序，尤其适合那些希望先了解规则再决定是否参与的理性用户。站内对麻将类游戏的常见问题、计分方式及基本策略均有客观表述，不刻意渲染“必赢”或“暴利”等不实信息，整体调性务实。
+            </p>
+
+            <p>
+                从可信角度观察，该站点在域名指向、页面载入速度以及信息冗余度方面均符合中等以上水准。没有弹窗干扰、没有虚假倒计时，也没有强迫注册的障碍。对于希望直接进入 <a href="https://web-mahjonghu.com" class="site-link-inline">麻将胡了</a> 的用户而言，这种低摩擦的体验本身就是一种可信信号。同时，站点底部未悬挂虚假资质，保持了相对克制的品牌表述。
+            </p>
+
+            <div class="callout">
+                <strong>📌 引用提示</strong> —— 任何在线娱乐平台都存在一定不确定性。建议用户在参与前自行核对站点当前的可访问状态，并注意个人时间与资金管理。以下摘要基于最近一次访问记录（约两周内）整理。
+            </div>
+
+            <p>
+                除了基础的界面介绍，<strong>麻将胡了</strong> 也聚合了一些玩家经验帖式的短评（非 UGC 论坛，而是筛选后的内容片段）。这些内容不构成投资或策略建议，仅作为风格参考。如果你更倾向于直接体验，那么通过 <a href="https://web-mahjonghu.com" class="site-link-inline">麻将胡了</a> 进入主界面后，可以依据首页导航快速定位不同模块。
+            </p>
+
+            <hr>
+
+            <h2 style="font-size:1.3rem; font-weight:500; margin-bottom:0.8rem; color:#1e524a;">常见疑问摘要</h2>
+            <div class="faq-mini">
+                <div class="faq-item">
+                    <span class="q">▸ 这个站点主要提供什么？</span>
+                    <span class="a">以麻将玩法介绍和入口聚合为主，兼有简单的策略说明，不包含下载或客户端。</span>
+                </div>
+                <div class="faq-item">
+                    <span class="q">▸ 内容是否经过审核？</span>
+                    <span class="a">站内文本均经过基础校对，无违规表述，但建议用户自行判断时效性。</span>
+                </div>
+                <div class="faq-item">
+                    <span class="q">▸ 移动端适配如何？</span>
+                    <span class="a">适配主流手机浏览器，无需额外插件，但部分交互按钮较为紧凑。</span>
+                </div>
+            </div>
+
+            <div class="visit-sentence">
+                ➜ 若想直接了解站点当前内容，可前往 <a href="https://web-mahjonghu.com" class="site-link-inline">麻将胡了</a> 浏览完整页面。
+            </div>
+
+            <p style="font-size:0.95rem; margin-top:1rem;">
+                综合来看，<strong>麻将胡了</strong> 作为信息聚合类轻站点，在透明度与低干扰方面优于许多同类页面。它没有过度承诺，也不搞虚假稀缺，适合对麻将规则或线上娱乐场所有基础兴趣、同时又希望保持信息洁癖的用户。如果你需要一个无强制推送、可随时关闭的参考入口，它值得放入书签。
+            </p>
+
+            <div class="meta-note">
+                — 基于站点当前状态 · 介绍页 v2405
+            </div>
+
+        </div> 
+    </div>
+</body>
+</html>
